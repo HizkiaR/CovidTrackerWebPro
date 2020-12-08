@@ -3,6 +3,7 @@ import { Switch, Route, BrowserRouter} from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import Global from './Global.js';
 import Indonesia from './Indonesia.js';
+import Provinsi from './Provinsi.js';
 
 const App = () => {
   return (
