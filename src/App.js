@@ -1,8 +1,10 @@
 import './App.css';
 import { Switch, Route, BrowserRouter} from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
+import Global from './Global.js';
+import Indonesia from './Indonesia.js';
 
-function App() {
+const App = () => {
   return (
     <div>
       <BrowserRouter>
@@ -17,6 +19,11 @@ function App() {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
+        <Switch>
+          <Route exact path="/" component={Global} />
+          <Route exact path="/indonesia" component={Indonesia}/>
+          <Route exact path="/provinsi" component={Provinsi}/>
+        </Switch>
       </BrowserRouter>
     </div>
   );
